@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Journey_Editor
+namespace JourneyEditor
 {
     /// <summary>
     /// Interaction logic for App.xaml

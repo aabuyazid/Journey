@@ -30,4 +30,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Journey-Editor\bin\Debug\net8.0-windows\JourneyEditor.deps.json" />
+  </ItemGroup>
 </Project>

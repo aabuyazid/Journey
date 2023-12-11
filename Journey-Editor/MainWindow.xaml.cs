@@ -8,8 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using JourneyEditor.GameProject;
 
-namespace Journey_Editor
+namespace JourneyEditor
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -19,6 +20,22 @@ namespace Journey_Editor
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += OnMainWindowLoaded;
+        }
+
+        private void OnMainWindowLoaded(object sender, RoutedEventArgs e)
+        {
+            Loaded -= OnMainWindowLoaded;
+            OpenProjectBrowserDialog();
+        }
+
+        private void OpenProjectBrowserDialog()
+        {
+            var projectBrowser = new ProjectBrowserDialogue();
+            if(projectBrowser.ShowDialog() == false)
+            {
+                Application.Current.Shutdown();
+            }
         }
     }
 }

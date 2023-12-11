@@ -1,7 +1,7 @@
-﻿<Application x:Class="Journey_Editor.App"
+﻿<Application x:Class="JourneyEditor.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Journey_Editor"
+             xmlns:local="clr-namespace:JourneyEditor"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
